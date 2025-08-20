@@ -58,7 +58,7 @@ RUN set -ex; \
        -o /usr/libexec/docker/cli-plugins/docker-compose \
     && chmod +x /usr/libexec/docker/cli-plugins/docker-compose
 
-RUN apk upgrade
+RUN apt-get upgrade -y
 # Copy entrypoint & helper scripts
 COPY entrypoint.sh /entrypoint.sh
 COPY modprobe.sh /usr/local/bin/modprobe
