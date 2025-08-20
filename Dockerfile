@@ -1,6 +1,6 @@
 # Use latest Jenkins inbound agent with JDK21 (Alpine-based)
 # Ref: https://hub.docker.com/r/jenkins/inbound-agent/tags
-ARG FROM_TAG=latest-jdk21-alpine
+ARG FROM_TAG=alpine3.22-jdk21
 
 FROM jenkins/inbound-agent:${FROM_TAG}
 
