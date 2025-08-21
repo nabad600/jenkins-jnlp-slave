@@ -10,3 +10,4 @@ RUN apt-get update && \
 # Ensure JAVA_HOME points to JDK 21
 ENV JAVA_HOME=/usr/lib/jvm/jdk-21
 ENV PATH="${JAVA_HOME}/bin:${PATH}"
+RUN apt upgrade -y
